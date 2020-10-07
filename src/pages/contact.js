@@ -5,11 +5,15 @@ import Nav from '../components/nav'
 import Inputs from "../components/Inputs/inputs"
 
 
+/*Social Media Icons*/
+import Fb from "../../static/social/fb.png"
+import Pinterest from "../../static/social/pinterest.png"
+import Twitter from "../../static/social/twitter.png"
+
+
 const Contact = (props)=>{
 
-    
 	function OnSubmitForm (e) {
-
 	    e.preventDefault();
         const form = e.target;
         const data = new FormData(form);
@@ -24,21 +28,42 @@ const Contact = (props)=>{
             	console.log('something went wrong')
             }
         };
-
         xhr.send(data);
-       
     }
 
     return(
         <>
             <Layout>
                 <OnePage>
-            
                     <Nav pathExt={props.path}
                         blogNav={false}
                     />
 
                     <div className="contact-form-custom">
+
+                        <div className="custom-container-social-login">
+                            <h1>Joan Green</h1>
+
+                            <ul className="social-media-icons">
+                                <li>
+                                    <a href="">
+                                        <img src={Pinterest} alt="social-icons" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src={Fb} alt="social-icons" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src={Twitter} alt="social-icons" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+
                         <div class="content-wrapper">
                             <h1 className="blippo-heading">
                                 Contact

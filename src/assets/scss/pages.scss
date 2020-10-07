@@ -508,3 +508,28 @@ $prm-font-size : 12px;
 .video-thumbnail{
     margin-bottom: 7%;
 }
+
+
+/*Social Media*/
+
+.custom-container-social-login{
+    h1{
+        font-size: 1rem;
+        font-weight: 800;
+        margin-bottom: 13%;
+        text-transform: uppercase;
+    }
+}
+
+.social-media-icons{
+    li{
+        display: inline-block;
+        a{
+            padding: 0 9px;
+            img{
+                width: 50px;
+            }
+        }
+    }
+}
+
