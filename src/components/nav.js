@@ -75,12 +75,6 @@ const Nav = (props) =>{
 					</li>
 
 					<li>
-						<Link to="/gallery">
-							Gallery
-						</Link>
-					</li>
-
-					<li>
 						<Link to="/blog">
 							Blog
 						</Link>

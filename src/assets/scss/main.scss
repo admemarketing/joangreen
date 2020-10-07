@@ -17,14 +17,18 @@
 @font-face {
     font-family:"augusta-free"; /*a name to be used later*/
     src: url("../../../static/fonts/august_free_bold.ttf") format('truetype'); /*URL to font*/
-    // font-weight: normal;
 }
 
+@font-face {
+    font-family:"blippo"; /*a name to be used later*/
+    src: url("../../../static/fonts/blippo.ttf") format('truetype'); /*URL to font*/
+}
 
 body{
     font-family: 'Poppins', sans-serif !important;
     margin: 0 auto;
 }
+
 h1,h2{
     font-size: 1.6em;
     color: #000000d9 !important;
@@ -70,7 +74,6 @@ button{
     }
 }
 
-
 /*Grid Elements*/
 .grid-two-columns{
     display: grid;
@@ -90,4 +93,23 @@ button{
     max-width: 1400px;
     margin:0 auto;
 }
+
+
+.content-one-page{
+    .content-wrapper{
+        
+        margin: 0 5%;
+        width: 56%;
+        background: #0a0a0a78;
+        padding: 3%;
+        transform: translateY(33%);
+
+        p{
+            margin: 0 !important;
+            color: #ffff;
+            font-size: 13px;
+        }
+    }
+}
+
 

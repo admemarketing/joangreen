@@ -1,38 +1,44 @@
 import React from 'react'
 import Layout from '../components/layout'
 import Nav from '../components/nav'
-import Banner from '../components/banner'
-import AuthorImg from '../../static/author/author.jpeg'
+import OnePage from "../components/one-page"
+
 
 const ATB = (props)=>{
 	
 	return (
 		<> 
 		 	<Layout>
-		 		<Nav pathExt={props.path}/>
-                 <Banner titlePage={`<span>About</span><span>the</span><span>Author</span>`}/>
-                  
-		 		<div className="container">
-				    <section className="body-author-contents columns">
-                         
-                        <div className="heading-quote column">
-                            <div className="author-image-container">
-                                <img src={AuthorImg} />
-                            </div>
-                        </div>
+                <OnePage>
+                    <Nav pathExt={props.path} 
+                        blogNav={false}
+                    />
 
-                        <article className="article-section column" id="author">
+                    <div className="home-page-apparel content-one-page">
+
+                        <div class="content-wrapper">
+                        <h1 className="blippo-heading">
+                           Author
+                        </h1>
                             <p>
-                               PETER JOHNSTON HAS BEEN A FAMILY DOCTOR FOR FIFTY YEARS,
-                               HIS WIFE'S INCURABLE ILLNESS IN 1979 LED HIM  TO EXPLORE
-                               THE CONNECTION BETWEEN THE BODY, MIND AND CONSCIOUNSNESS.
-                               AS PIONEER OF HOLISTIC MEDICINE, HE HAS COMBINED ALTERNATIVE
-                               APPROACHES WITH ORTHODOX MEDICINE FOR FORTY YEARS.
+                            This book "resilience" came to fruition after a statement was
+                            made by a member of a group "We Didn't Believe You." This has
+                            been a catalyst for joan to write her memoirs. if Joan wasn't believed
+                            as an adult; the question was aksed how would a child be heard. Joan's 
+                            early memories are happy times with familt and the traditions that were
+                            created. i remember having a strong foundation of a love for the Lord.
+                            Joan knew that Jesus love her for the Bible told her so. As a child Joan 
+                            was sexually abused while sleeping in her own bed. Joan should have been
+                            safe. Joan didn't have the words and did not tell anyone. it took fifty four
+                            years before Joan felt strong enought to report this crime to the police. Joan's
+                            faith has been an integral part of her journey. There are many blessings that
+                            come from adversity. Throught each crisis with help from others Joan has
+                            learned that there is hope for the future.
                             </p>
-                        </article>
-                    </section> 
-                </div>          
+                        </div>
+                    </div>
 
+                </OnePage>
 		 	</Layout>
 		</>
 	)

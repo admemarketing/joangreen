@@ -1,8 +1,7 @@
 import React from "react"
 import Layout from '../components/layout'
 import Nav from '../components/nav'
-import Banner from '../components/banner'
-import FrontBook from '../../static/books/main_book.png'
+import OnePage from "../components/one-page"
 
 
 
@@ -10,24 +9,29 @@ const Order =  (props) =>{
     return(
         <>
             <Layout>
-                <Nav/>
-                <Banner titlePage={`<span>Order</span>`} />
 
-                <section className="upper-main" id="main-upper-author">
-                    <div className="grid-one-col">
-                        <div className="grid-child" id="author-contents">
-                            <img 
-                                className="book-order-display" 
-                                src={FrontBook} 
-                                alt="book-display-order"
-                            />
+                <OnePage>
+                    <Nav pathExt={props.path}/>
+                    <div className="home-page-apparel content-one-page">
 
-                            <button id="order-here-button">
-                                <a href="https://peterjohnstonauthor.com/product/the-eagles-way/">Order Here</a>
-                            </button>
+                        <div class="content-wrapper"> 
+                            <h1 className="blippo-heading">
+                               Order
+                            </h1>
+                            <p>
+                            Lorem Ipsum is simply dummy
+                            text of the printing and 
+                            typesetting industry. Lorem 
+                            Ipsum has been the industry's 
+                            standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of 
+                            type and scrambled it to make a type specimen
+                            book. It has survived not only five centuries,
+                            </p>
                         </div>
                     </div>
-                </section>
+                </OnePage>
+           
             </Layout>
         </>
     )
