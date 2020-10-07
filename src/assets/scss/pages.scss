@@ -509,15 +509,24 @@ $prm-font-size : 12px;
     margin-bottom: 7%;
 }
 
+.book-image-container{
+    img{
+        width: 231px;
+        margin-top: 81%;
+    }
+}
+
 
 /*Social Media*/
 
 .custom-container-social-login{
     h1{
-        font-size: 1rem;
+        font-size: 2rem;
         font-weight: 800;
         margin-bottom: 13%;
         text-transform: uppercase;
+        text-shadow: 2px 2px 11px #3f3f3f;
+        color: #fff !important;
     }
 }
 

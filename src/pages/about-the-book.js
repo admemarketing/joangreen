@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import Nav from '../components/nav'
 import OnePage from "../components/one-page"
+import MainBook from "../../static/books/main_book.png"
 
 const ATB = (props)=>{
 
@@ -16,6 +17,11 @@ const ATB = (props)=>{
                     />
 
                     <div className="home-page-apparel content-one-page">
+
+                        <div className="book-image-contaienr">
+                            <img src={MainBook}  alt="main_book"/>
+                        </div>
+
                         <div class="content-wrapper">
                             
                             <h1 className="blippo-heading">

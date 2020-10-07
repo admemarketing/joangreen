@@ -40,8 +40,8 @@ const Contact = (props)=>{
                     />
 
                     <div className="contact-form-custom">
-
                         <div className="custom-container-social-login">
+                            
                             <h1>Joan Green</h1>
 
                             <ul className="social-media-icons">
