@@ -8,9 +8,6 @@ const inputs = (props)=> {
 
 	return (
 		<label>
-			{toCapitalize}
-			<span className="asterisk">*</span> 
-
 			<input 
 				name={initName.toLowerCase()} 
 				type={props.type}

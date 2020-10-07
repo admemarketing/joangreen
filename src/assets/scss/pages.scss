@@ -155,13 +155,13 @@ $prm-font-size : 12px;
 /*Contact*/
 .formInputs{
     margin-top: 11px !important;
-    padding: 0.89em 0.246em !important;
+    padding: 1px 0.754em !important;
     border: 1px solid #cccccc !important;
     color: #636363ee !important;
     border-radius: 1px !important;
-    width: 100% !important;
+    width: 75% !important;
+    display: block;
     max-width: 100%;
-    // background: rgb(20, 20, 20);
 }
 
 
@@ -190,19 +190,23 @@ $prm-font-size : 12px;
 }
 
 .textArea{
-    height: 250px;
+    height: 56px;
     border: 1px solid #cecece;
-    width: 100%;
+    width: 75%;
+    margin-top: 4%;
     // background: #181818;
 }
 
 .abtiaryButton{
     padding: 13px 74px;
     border: none;
-    background: #2e9fff;
+    background: none;
     color: #fff;
     text-transform: uppercase;
-    margin-top: 39px; 
+    margin-top: 39px;
+    color: #ee632e;
+    font-size: 1.4rem;
+    font-weight: 700;
 }
 
 .buttonContainer{

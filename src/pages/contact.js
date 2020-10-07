@@ -1,8 +1,8 @@
 import React from 'react'
+import OnePage from "../components/one-page"
 import Layout from '../components/layout'
-import Inputs from "../components/Inputs/inputs"
 import Nav from '../components/nav'
-import Banner from '../components/banner'
+import Inputs from "../components/Inputs/inputs"
 
 
 const Contact = (props)=>{
@@ -28,63 +28,42 @@ const Contact = (props)=>{
         xhr.send(data);
        
     }
-    
+
 
     return(
         <>
-
             <Layout>
+                <OnePage>
+                    
+                    <Nav pathExt={props.path}
+                        blogNav={false}
+                    />
 
-		 		<Nav pathExt={props.path}/>
-		 		<Banner titlePage={`<span>Contact</span>`}/>
-
-                <main className="flexMainContainer">
-                    <div className="flex-container-fx">
-
-                            <p className="contactMessage">
-                                Hello! Are you having a good day? Anyway, if you have any concerns or you just want to 
-                                share something, please feel free to drop me a line. I would love to hear anything from you.
-                            </p>
-
+                    <div className="contact-form-custom">
+                        <div class="content-wrapper">
+                            <h1 className="blippo-heading">
+                                Contact
+                            </h1>
+                            
                             <form 
                                 onSubmit={OnSubmitForm}
                                 action="https://formspree.io/xvopdpny"
                                 method="POST">
 
-                            <div className="columns" id="form-wrapper">
-                                <div className="column is-half">
-                            
+                                <div className="form__appex">
                                     <Inputs 
                                         name="fullname" 
                                         type="text" />
-
-                                    <Inputs
-                                        name="phone" 
-                                        type="text" />
-
-                                </div>
-
-                                <div className="column is-half">
-
                                     <Inputs 
                                         name="email"
                                         type="email" />
 
-                                    <Inputs 
-                                        name="address" 
-                                        type="text" />
-
-                                </div>
-                            </div>
-
-                            <div className="columns">
-                                <div className="column is-full" id="textAreaContainer">
-                                    <label> Message	</label>
-                                    <textarea type="text" name='message' 
+                                    <textarea 
+                                        type="text" name='message' 
                                         className="textArea"
                                         placeholder='Message'
                                         required />
-            
+        
 
                                     <div className="buttonContainer">
                                         <input 
@@ -92,18 +71,17 @@ const Contact = (props)=>{
                                             value="Submit"
                                             type="submit" />
                                     </div>
+
+
                                 </div>
-                            </div>
 
-                        </form>
+                            </form>
 
-
-    
+                        </div>
                     </div>
-                </main>
-
-		 	</Layout>
-        </>
+                </OnePage>
+            </Layout>
+        </>     
     )
 }
 
