@@ -29,12 +29,11 @@ const Contact = (props)=>{
        
     }
 
-
     return(
         <>
             <Layout>
                 <OnePage>
-                    
+            
                     <Nav pathExt={props.path}
                         blogNav={false}
                     />
@@ -44,7 +43,7 @@ const Contact = (props)=>{
                             <h1 className="blippo-heading">
                                 Contact
                             </h1>
-                            
+
                             <form 
                                 onSubmit={OnSubmitForm}
                                 action="https://formspree.io/xvopdpny"
@@ -64,7 +63,6 @@ const Contact = (props)=>{
                                         placeholder='Message'
                                         required />
         
-
                                     <div className="buttonContainer">
                                         <input 
                                             className="abtiaryButton" 
