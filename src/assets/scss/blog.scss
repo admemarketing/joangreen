@@ -1,0 +1,140 @@
+#blog-body-content-list{
+	.heading-section{
+		font-size: 4em;
+	    font-weight: bold;
+	    margin: 4% auto;
+	}	
+}
+
+.grid-parent-blog{
+
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7%;
+    background: #e6e6e6 !important;
+    padding: 4%;
+    box-shadow: 1px 1px 33px 2px #eee;
+
+    /*bgs*/
+    background: #ffffff;
+    padding: 4%;
+    box-shadow: 1px 1px 33px 2px #eee;
+
+    .blog-link{
+        text-align: left;
+        margin-top: 30px;
+         
+    	a{
+            font-weight: 900;
+            text-transform: uppercase;
+            text-decoration: underline;
+            color: #03A9F4 !important;
+    	}
+    }
+    
+    .blog-num{
+	    font-size: 4rem;
+	    font-weight: 700;
+	    text-align: center;
+	    margin-top: 25px;
+    }
+
+    .blog-body{
+    	h1{
+    		font-size: 2rem;
+
+    		&:after{
+    			content: '';
+			    display: block;
+			    background: #f4f4f4;
+			    position: absolute;
+			    width: 60%;
+			    height: 1px;
+			    margin: 12px 0;
+    		}
+    	}
+
+    	.blog-date{
+    		font-size: 11px;
+		    text-transform: uppercase;
+		    font-weight: 100;
+		    letter-spacing: 3px;
+		    color: #f4954e;	
+    	}
+    }
+}
+
+
+/*
+====================
+    Single Postss
+====================
+*/
+
+.single-heading-title-post{
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.two-blog-grid{
+    display: grid;
+    grid-template-columns: 11% 1fr;
+    align-items: center;
+    margin: 2% 0;
+}
+
+.single-post-thumbnail{
+    img{
+        border-radius: 50%;
+        width: 50%;
+    }
+}
+
+.author-name-single-post{
+    a{
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #d59c1c !important;
+    }
+}
+
+.single-post-thumbnail{
+    text-align: center;
+}
+
+.single-post-date{
+    display: block;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.commentSection{
+    margin: 7% 0;
+}
+
+.section-single-blog-post{
+    padding: 17% 9%;
+}
+
+.blog-nav-prio{
+    background: #141414;
+}
+
+.grid-content-post{
+    display: block;
+    width: 700px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.published-on{
+    font-size: 12px;
+    margin-right: 14px;
+    font-style: italic;
+}

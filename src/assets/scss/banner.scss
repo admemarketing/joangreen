@@ -1,0 +1,145 @@
+
+.grid-element-text{
+    display: grid;
+    grid-template-columns: 32% 1fr;
+    align-items: center;
+}
+
+.div-text-elem{
+    margin: 0 !important;
+    line-height: 1.3;
+}
+
+#element-text-banner{
+    span{
+        &:nth-child(3){
+            font-size: 1.5rem;
+            letter-spacing: 13px;
+            text-align: left;
+            color: #ffffff80 !important;
+            margin-left: 10px;
+
+            &:before{
+                content: '';
+                width: 39%;
+                background: #d42e0d;
+                position: relative;
+                display: block;
+                height: 1px;
+                margin: 7px 10px;
+            }
+        }
+    }
+}
+
+.banner-section{
+    background: url("../../../static/banner/front_banner.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    h1{
+        font-size: 2.0em;
+        font-weight: bold;
+    }
+}
+
+.banner-img{
+    
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    img{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width:100%;
+    }
+}
+
+.f-letter-elem{
+    font-weight: 900 !important;
+    font-size: 18rem;
+    text-align: center;
+    color: #000000 !important;
+    background: -webkit-linear-gradient(#e0482f, #a90c55);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#banner-layout-responsive{
+    height: 50vh;
+    grid-template-columns: 15% 1fr;
+}
+
+/*Modification*/
+.banner-text{
+    line-height: 1;
+    h1{
+        
+        text-transform: uppercase;
+        font-size: 11vw;
+        line-height: 1;
+        font-weight: 900;
+        color: #000 !important;
+        
+        span{
+            &:nth-child(1),
+            &:nth-child(4){
+                position: relative;
+                z-index: 2;
+            }
+        }
+    }
+
+    p{
+        margin: 0 !important;
+        position: relative;
+        z-index: 10;
+        color: #fbc168;
+        text-transform: uppercase;
+        letter-spacing: 20px;
+        font-weight: bold;
+        font-size: 2em;
+        opacity: .8;
+    }
+        
+    .first-title{
+        font-family: "augusta-free";
+        font-size: 5em;
+        color: #fff;
+    }
+}
+
+/*banner*/
+.heading-banner-section{
+    position: absolute;
+    top: 44%;
+    width: 100%;
+    margin: 0 12%;
+   
+    .subheading-tag{
+        color: #ffff;
+        text-transform: uppercase;
+    }
+}
+
+.heading-letters{
+    
+    width: 100%;
+    line-height: 1;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 4rem;
+    
+    span{
+        display: block;
+        color: #FFF;
+    }
+}
