@@ -17,13 +17,11 @@ const ATB = (props)=>{
                     />
 
                     <div className="home-page-apparel content-one-page">
-
-                        <div className="book-image-contaienr">
+                        <div className="book-image-container">
                             <img src={MainBook}  alt="main_book"/>
                         </div>
 
                         <div class="content-wrapper">
-                            
                             <h1 className="blippo-heading">
                                 Book
                             </h1>

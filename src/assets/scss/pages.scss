@@ -12,14 +12,6 @@ $prm-font-size : 12px;
 @import "slick.scss";
 
 .web-banner{
-    background: url("../../../static/banner/front_banner.png");
-    height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-
     span{
         letter-spacing: 0.67em;
         text-transform: uppercase;
@@ -505,21 +497,32 @@ $prm-font-size : 12px;
         width: 75%;
     }
 }
+
 .video-thumbnail{
     margin-bottom: 7%;
 }
 
 .book-image-container{
+    margin-top: 13%;
     img{
-        width: 231px;
-        margin-top: 81%;
+        width: 250px;
+        max-width: 100%;
     }
 }
 
+.email__add{
+    color: #fffe;
+    margin: 0 !important;
+}
 
 /*Social Media*/
 
 .custom-container-social-login{
+    text-align: center;
+    margin-top: 15%;
+    color: #ffff;
+    display: block;
+
     h1{
         font-size: 2rem;
         font-weight: 800;
@@ -528,6 +531,20 @@ $prm-font-size : 12px;
         text-shadow: 2px 2px 11px #3f3f3f;
         color: #fff !important;
     }
+}
+
+.book-image-container-order{
+    margin-top: 0;
+    text-align: center;
+    img {
+        width: 250px;
+        max-width: 100%;
+    }
+}
+
+.author-contact{
+    margin: 4% 0 !important;
+    text-align: center;
 }
 
 .social-media-icons{
@@ -539,6 +556,5 @@ $prm-font-size : 12px;
                 width: 50px;
             }
         }
-    }
-}
-
+    } 
+}   

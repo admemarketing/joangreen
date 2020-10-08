@@ -112,4 +112,8 @@ button{
     }
 }
 
-
+[aria-current="page"]{
+    color: #000 !important;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+}

@@ -61,13 +61,18 @@ const Contact = (props)=>{
                                     </a>
                                 </li>
                             </ul>
-                        </div>
 
+                            <p className="author-contact">(Author Contact)</p>
+                        </div>
 
                         <div class="content-wrapper">
                             <h1 className="blippo-heading">
                                 Contact
                             </h1>
+                             
+                            <p className="email__add">
+                               email@emailaddress.com
+                            </p>
 
                             <form 
                                 onSubmit={OnSubmitForm}
@@ -94,12 +99,8 @@ const Contact = (props)=>{
                                             value="Submit"
                                             type="submit" />
                                     </div>
-
-
                                 </div>
-
                             </form>
-
                         </div>
                     </div>
                 </OnePage>
