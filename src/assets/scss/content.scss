@@ -232,7 +232,6 @@
     margin: 0;
     grid-template-columns: 1fr 1fr;
     height: 735px;
-
 }
 
 #auth-content-wrapper{
@@ -654,4 +653,8 @@
         padding: 3%;
         transform: translateY(33%);
     }
+}
+
+.author-container{
+    margin-top: 12%;
 }

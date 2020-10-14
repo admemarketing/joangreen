@@ -10,6 +10,9 @@ import Fb from "../../static/social/fb.png"
 import Pinterest from "../../static/social/pinterest.png"
 import Twitter from "../../static/social/twitter.png"
 
+/*Author Image*/
+import Author from "../../static/author/author.png"
+
 
 const Contact = (props)=>{
 
@@ -41,6 +44,10 @@ const Contact = (props)=>{
 
                     <div className="contact-form-custom">
                         <div className="custom-container-social-login">
+
+                            <div className="author-container">
+                                <img src={Author} alt="author__image" />
+                            </div>
                             
                             <h1>Joan Green</h1>
 
